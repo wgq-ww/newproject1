@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户页面</title>
+</head>
+<body>
+    <h2>欢迎，{{ username }}！</h2>
+    <p>这是您的个人页面。</p>
+    <img src="{{ url_for('static', filename='images/suc.png') }}" alt="示例图片" width="300">
+    <br>
+    <a href="{{ url_for('logout') }}">退出登录</a>
+</body>
+</html>
